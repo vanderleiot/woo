@@ -15,7 +15,7 @@ $options = array(
 
 try {
 
-		client = new WC_API_Client( 'http://shopbdc.com.br/', 'ck_253c43bc3b5f5ccc64275a30eaa06b885834bd01','cs_0a5638b06799563fe3b121eecf93b9049a556cc5', $options );
+		client = new WC_API_Client( 'http://shopbdc.com.br', 'ck_253c43bc3b5f5ccc64275a30eaa06b885834bd01','cs_0a5638b06799563fe3b121eecf93b9049a556cc5', $options );
 
 
 		/// Lets Try creating the API
@@ -93,17 +93,17 @@ try {
 	//print_r( $client->order_refunds->delete( $order_id, $refund_id ) );
 
 	// products
-	//print_r( $client->products->get() );
-	//print_r( $client->products->get( $product_id ) );
-	//print_r( $client->products->get( $variation_id ) );
-	//print_r( $client->products->get_by_sku( 'a-product-sku' ) );
-	//print_r( $client->products->create( array( 'title' => 'Test Product', 'type' => 'simple', 'regular_price' => '9.99', 'description' => 'test' ) ) );
-	//print_r( $client->products->update( $product_id, array( 'title' => 'Yet another test product' ) ) );
-	//print_r( $client->products->delete( $product_id, true ) );
-	//print_r( $client->products->get_count() );
-	//print_r( $client->products->get_count( array( 'type' => 'simple' ) ) );
-	//print_r( $client->products->get_categories() );
-	//print_r( $client->products->get_categories( $category_id ) );
+        print_r( $client->products->get() );
+	print_r( $client->products->get( $product_id ) );
+	print_r( $client->products->get( $variation_id ) );
+	print_r( $client->products->get_by_sku( 'a-product-sku' ) );
+	print_r( $client->products->create( array( 'title' => 'Test Product', 'type' => 'simple', 'regular_price' => '9.99', 'description' => 'test' ) ) );
+	print_r( $client->products->update( $product_id, array( 'title' => 'Yet another test product' ) ) );
+	print_r( $client->products->delete( $product_id, true ) );
+	print_r( $client->products->get_count() );
+	print_r( $client->products->get_count( array( 'type' => 'simple' ) ) );
+	print_r( $client->products->get_categories() );
+	print_r( $client->products->get_categories( $category_id ) );
 
 	// reports
 	//print_r( $client->reports->get() );
