@@ -1,6 +1,6 @@
 angular.module("wooshop").constant("SETTINGS", {
 
-    base_url: 'https://crossorigin.me/http://YOUR_WOOCOMMERCE_STORE_URL/mobileAPI',
+    base_url: 'http://superbdc.com.br/mobileAPI',
     
     tax_rate: 4, //in percentage
     
