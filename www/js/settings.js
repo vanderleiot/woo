@@ -1,6 +1,6 @@
 angular.module("wooshop").constant("SETTINGS", {
 
-    base_url: 'http://shopbdc.com.br/mobileAPI',
+    base_url: 'http://shopbdc.com.br',
     
     tax_rate: 4, //in percentage
     
